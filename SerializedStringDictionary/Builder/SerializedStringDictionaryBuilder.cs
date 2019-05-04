@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using SerializedStringDictionary.Internal;
 using SerializedStringDictionary.Builder.Internal;
+using System.Diagnostics;
 
 namespace SerializedStringDictionary.Builder
 {
@@ -84,7 +85,7 @@ namespace SerializedStringDictionary.Builder
                     foreach (var child in node.Children)
                     {
                         var code = codes[child.Value];
-                        System.Diagnostics.Debug.Assert(0 < code);
+                        Debug.Assert(0 < code);
                         int next = current_base + code;
                         if (getFromList(check_array, next) != 0)
                         {
@@ -100,7 +101,7 @@ namespace SerializedStringDictionary.Builder
                 foreach (var child in node.Children)
                 {
                     var code = codes[child.Value];
-                    System.Diagnostics.Debug.Assert(0 < code);
+                    Debug.Assert(0 < code);
                     int next = current_base + code;
 
                     state_dictionary[child.Guid] = next;
@@ -149,7 +150,7 @@ namespace SerializedStringDictionary.Builder
                 foreach (var child in node.Children)
                 {
                     int code = codes[child.Value];
-                    System.Diagnostics.Debug.Assert(0 < code);
+                    Debug.Assert(0 < code);
                     int candidate = new_base + code;
                     if (check_array[candidate] != 0) { is_colided = true; break; }
                 }
@@ -161,7 +162,7 @@ namespace SerializedStringDictionary.Builder
             foreach (var child in node.Children)
             {
                 var code = codes[child.Value];
-                System.Diagnostics.Debug.Assert(0 < code);
+                Debug.Assert(0 < code);
                 int next = new_base + code;
 
                 /// 新しい遷移先にcheckを設定
