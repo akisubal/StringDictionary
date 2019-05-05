@@ -3,7 +3,7 @@ StringDictionary is a dictionary whose key is String.
 Key is saved as double array.
 
 ## Usage
-###Build
+### Build
     var builder = new StringDictionaryBuilder<int>();
     builder.Add("ab", 3);
     builder.Add("ac", 4);
@@ -11,7 +11,7 @@ Key is saved as double array.
     var dictionary = builder.Build();
 
 
-###Use
+### Use
      Assert.IsTrue(dictionary.Contains("ab"));
      Assert.IsFalse(dictionary.Contains("efg"));
      Assert.IsFalse(dictionary.Contains("a"));
