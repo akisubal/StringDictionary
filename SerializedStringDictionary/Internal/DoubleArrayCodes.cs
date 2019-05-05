@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SerializedStringDictionary.Internal
+namespace StringDictionary.Internal
 {
     /// <summary>
     /// 文字に対して配列をどれだけ進めるかの表

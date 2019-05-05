@@ -1,6 +1,6 @@
-﻿using SerializedStringDictionary.Internal;
+﻿using StringDictionary.Internal;
 
-namespace SerializedStringDictionary.Builder.Internal
+namespace StringDictionary.Builder.Internal
 {
     /// <summary>
     /// 文字に対して配列をどれだけ進めるかの表を作成する

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SerializedStringDictionary.Internal
+namespace StringDictionary.Internal
 {
     [Serializable]
     public class DoubleArray

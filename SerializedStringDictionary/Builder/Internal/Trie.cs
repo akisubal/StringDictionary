@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SerializedStringDictionary.Builder.Internal
+namespace StringDictionary.Builder.Internal
 {
     /// <summary>
     /// 文字を値とするトライ木
